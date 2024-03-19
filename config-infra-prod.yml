@@ -17,8 +17,8 @@ variables:
   enable_monitoring: false
 
   # Azure DevOps
-  ado_service_connection_rg: Azure-ARM-Prod
-  ado_service_connection_aml_ws: Azure-ARM-Prod
+  ado_service_connection_rg: Azure-ARM-Prod-ProjectName
+  ado_service_connection_aml_ws: Azure-ARM-Prod-ProjectName
 
   # DO NOT TOUCH
 
@@ -31,7 +31,7 @@ variables:
   storage_account: st$(namespace)$(postfix)$(environment)
 
   # For terraform reference
-  terraform_version: 0.14.7
+  terraform_version:2.30.0
   terraform_workingdir: infrastructure
   terraform_st_resource_group: rg-$(namespace)-$(postfix)$(environment)-tf
   terraform_st_location: $(location)
